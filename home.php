@@ -20,8 +20,9 @@ include 'header.html';
                     echo '<textarea readonly disabled rows="10" cols="30">'.$_POST['message'].'</textarea>';
                 }
 
-            if (isset($_POST['attachment']) && $_POST['attachment'] !='') echo 'Вы приложили следующий файл: ' .$_POST['attachment'];
-               
+            if (isset($_POST['attachment']) && $_POST['attachment'] != '') {
+                echo '<p>Вы приложили следующий файл: ' . $_POST['attachment'].'</p>';
+            }
                 echo '<div class="button_container"><a href="index.php?NAME='.$_POST['name'].'&EMAIL='.$_POST['email'].'&E='.$_POST['source'].'"><button class="button_signUp">Заполнить снова</button></a><div>';
 
             } else {

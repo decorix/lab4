@@ -10,7 +10,7 @@ include 'header.html';
             <h1>Форма обратной связи</h1>
         </div>
         <div class="form_container">
-            <form action="home.php" method="post" enctype="multipart/form-data">
+            <form action="home.php" method="post">
                 <div class="form-group">
                     <label class="form-label" for="name">ФИО</label>
                     <input class="inputs" id="name" type="text" name="name"  required value=<?php
